@@ -1,5 +1,5 @@
 # osu-overlay
-game overlay for the rhythm game "osu!"
+game overlay for the rhythm game [osu!](https://osu.ppy.sh)
 
 
 requires [gosumemory](https://github.com/l3lackShark/gosumemory)
