@@ -1,0 +1,71 @@
+.panel {
+    position: relative;
+    display: block;
+    font-family: consolas;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    height: 160px;
+    width: 450px;
+}
+
+.PlayStats {
+    justify-content: space-between;
+    margin-left: 30px;
+    width: 440px;
+    font-size: 40px;
+    color: rgb(0, 122, 204);
+    position: absolute;
+    bottom: 5px;
+}
+
+#unstableRate {
+    display: inline-block;
+    color: white;
+}
+
+#ppcounter {
+    color: white;
+}
+
+.ppcounterbox {
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+
+.hits {
+    top: 5px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    margin-left: 23px;
+    width: 400px;
+    font-size: 40px;
+    color: rgb(0, 122, 204);
+    position: absolute;
+}
+
+#h100 {
+    color: #82BC8F;
+}
+
+#h50 {
+    color: #CFCF7A;
+}
+
+#h0 {
+    color: #cf7a81;
+}
+
+#grade {
+    color: gold;
+    display: flex;
+    font-family: consolas;
+    font-size: 50px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.full {
+    display: flex;
+}
