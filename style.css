@@ -1,17 +1,18 @@
 .panel {
     position: relative;
     display: block;
-    font-family: consolas;
+    font-family: Source Code Pro;
+    font-weight: bold;
     background-color: rgb(30, 30, 30);
     border-radius: 10px;
     height: 160px;
-    width: 450px;
+    width: 370px;
 }
 
 .PlayStats {
     justify-content: space-between;
     margin-left: 30px;
-    width: 440px;
+    width: 360px;
     font-size: 40px;
     color: rgb(0, 122, 204);
     position: absolute;
@@ -28,6 +29,7 @@
 }
 
 .ppcounterbox {
+    display: flex;
     position: absolute;
     right: 50px;
     bottom: 0px;
@@ -38,34 +40,63 @@
     display: flex;
     justify-content: space-around;
     height: 50px;
-    margin-left: 23px;
-    width: 400px;
+    margin-left: 10px;
+    width: 350px;
     font-size: 40px;
     color: rgb(0, 122, 204);
     position: absolute;
 }
 
 #h100 {
-    color: #82BC8F;
+    color: #ffffff;
 }
 
 #h50 {
-    color: #CFCF7A;
+    color: #ffffff;
 }
 
 #h0 {
-    color: #cf7a81;
+    color: #ffffff;
 }
 
 #grade {
     color: gold;
     display: flex;
     font-family: consolas;
+    font-weight: bold;
     font-size: 50px;
     margin-right: 20px;
     font-weight: bold;
 }
 
 .full {
+    display: flex;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src:  url('SourceCodePro-Regular.ttf') format('truetype');
+}
+
+.hitsUnderline {
+    height: 8px;
+    width: 16px;
+    border-radius: 4px;
+    margin: 0 auto 0 auto;
+}
+
+#hunUnderline {
+    background-color: #82BC8F;
+}
+
+#fivUnderline {
+    background-color: #CFCF7A;
+}
+
+#missUnderline {
+    background-color: #cf7a81;
+}
+
+#urBox {
     display: flex;
 }

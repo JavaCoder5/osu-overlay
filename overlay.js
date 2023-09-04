@@ -1,6 +1,6 @@
 var ws = new WebSocket("ws://localhost:24050/ws");
 
-ws.onmessage = function (evt) { 
+ws.onmessage = function (evt) {
     var received_msg = evt.data;
     const parsedJson = JSON.parse(received_msg);
 
@@ -20,48 +20,63 @@ ws.onmessage = function (evt) {
     document.getElementById("h0").textContent = h0;
     if (menu !== 2) {
         if (silver) {
+            document.getElementById("grade").style.color = "silver";
+            document.getElementById("grade").textContent = "X";
+        } else {
+            document.getElementById("grade").style.color = "gold";
+            document.getElementById("grade").textContent = "X";
+        }
+    } else {
+        if (silver) {
+            if (!grade) {
                 document.getElementById("grade").style.color = "silver";
                 document.getElementById("grade").textContent = "X";
-        } else {
-                document.getElementById("grade").style.color = "gold";
-                document.getElementById("grade").textContent = "X";
-            }
-        } else {
-            if (silver) {
+            } else {
                 if (grade == "SS") {
                     document.getElementById("grade").style.color = "silver";
                     document.getElementById("grade").textContent = "X";
+                } else {
+                    if (grade == "S") {
+                        document.getElementById("grade").style.color = "silver";
+                        document.getElementById("grade").textContent = "S";
+                    }
                 }
-                if (grade == "S") {
-                    document.getElementById("grade").style.color = "silver";
-                    document.getElementById("grade").textContent = "S";
-                }
+            }
+        } else {
+            if (!grade) {
+                document.getElementById("grade").style.color = "gold";
+                document.getElementById("grade").textContent = "X";
             } else {
                 if (grade == "SS") {
                     document.getElementById("grade").style.color = "gold";
                     document.getElementById("grade").textContent = "X";
+                } else {
+                    if (grade == "S") {
+                        document.getElementById("grade").style.color = "gold";
+                        document.getElementById("grade").textContent = "S";
+                    } else {
+                        if (grade == "A") {
+                            document.getElementById("grade").textContent = grade;
+                            document.getElementById("grade").style.color = "#bdedc5";
+                        } else {
+                            if (grade == "B") {
+                                document.getElementById("grade").textContent = grade;
+                                document.getElementById("grade").style.color = "#bdd5ed";
+                            } else {
+                                if (grade == "C") {
+                                    document.getElementById("grade").textContent = grade;
+                                    document.getElementById("grade").style.color = "#ddbded";
+                                } else {
+                                    if (grade == "D") {
+                                        document.getElementById("grade").textContent = grade;
+                                        document.getElementById("grade").style.color = "#edbdbd";
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                if (grade == "S") {
-                    document.getElementById("grade").style.color = "gold";
-                    document.getElementById("grade").textContent = "S";
-                }
             }
-            if (grade == "A") {
-                document.getElementById("grade").textContent = grade;
-                document.getElementById("grade").style.color = "#bdedc5";
-            }
-            if (grade == "B") {
-                document.getElementById("grade").textContent = grade;
-                document.getElementById("grade").style.color = "#bdd5ed";
-            }
-            if (grade == "C") { 
-                document.getElementById("grade").textContent = grade;
-                document.getElementById("grade").style.color = "#ddbded";
-            }
-            if (grade == "D") {
-                document.getElementById("grade").textContent = grade;
-                document.getElementById("grade").style.color = "#edbdbd";
-            }
-
-        } 
+        }
+    }
 }
