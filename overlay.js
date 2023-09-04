@@ -39,6 +39,26 @@ ws.onmessage = function (evt) {
                     if (grade == "S") {
                         document.getElementById("grade").style.color = "silver";
                         document.getElementById("grade").textContent = "S";
+                    } else {
+                        if (grade == "A") {
+                            document.getElementById("grade").textContent = grade;
+                            document.getElementById("grade").style.color = "#bdedc5";
+                        } else {
+                            if (grade == "B") {
+                                document.getElementById("grade").textContent = grade;
+                                document.getElementById("grade").style.color = "#bdd5ed";
+                            } else {
+                                if (grade == "C") {
+                                    document.getElementById("grade").textContent = grade;
+                                    document.getElementById("grade").style.color = "#ddbded";
+                                } else {
+                                    if (grade == "D") {
+                                        document.getElementById("grade").textContent = grade;
+                                        document.getElementById("grade").style.color = "#edbdbd";
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
