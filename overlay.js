@@ -18,7 +18,7 @@ ws.onmessage = function (evt) {
     document.getElementById("h100").textContent = h100;
     document.getElementById("h50").textContent = h50;
     document.getElementById("h0").textContent = h0;
-    if (menu !== 2) {
+    if (menu !== 2 && menu !== 7) {
         if (silver) {
             document.getElementById("grade").style.color = "silver";
             document.getElementById("grade").textContent = "X";
