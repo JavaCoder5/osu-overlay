@@ -20,3 +20,5 @@ and move the extracted folder to the "static" folder found where you have downlo
 ![move](https://github.com/JavaCoder5/osu-overlay/assets/111396266/db155059-16d8-4d9f-b4da-e217842953d0)
 
 if you open the overlay in your browser it should look something like this: ![overlay](https://github.com/JavaCoder5/osu-overlay/assets/111396266/f5a4cdfd-5a37-4de3-afc3-7e492099dd9d)
+
+instuctions for ingame usage can be found [here](https://github.com/l3lackShark/gosumemory/wiki/GameOverlay)
